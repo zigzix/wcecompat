@@ -65,6 +65,9 @@ typedef long _off_t;
 #define __OFF_T_DEFINED
 #endif
 
+#define _stat stat
+#define _fstate fstat
+
 struct stat
 {
 	_dev_t			st_dev;

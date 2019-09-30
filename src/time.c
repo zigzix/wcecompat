@@ -565,8 +565,8 @@ struct tm* localtime(const time_t* clock)
 	st_tm.tm_min = stLocal.wMinute;
 	st_tm.tm_hour = stLocal.wHour;
 	st_tm.tm_mday = stLocal.wDay;
-	st_tm.tm_mon = stLocal.wMonth;
-	st_tm.tm_year = stLocal.wYear;
+	st_tm.tm_mon = stLocal.wMonth - 1;
+	st_tm.tm_year = stLocal.wYear - 1900;
 	st_tm.tm_wday = stLocal.wDayOfWeek;
 	st_tm.tm_yday = dayOfYear(stLocal.wYear, stLocal.wMonth-1, stLocal.wDay);
 	if (tziResult == TIME_ZONE_ID_UNKNOWN)
@@ -601,8 +601,8 @@ struct tm* gmtime(const time_t* clock)
 	st_tm.tm_min = stUtc.wMinute;
 	st_tm.tm_hour = stUtc.wHour;
 	st_tm.tm_mday = stUtc.wDay;
-	st_tm.tm_mon = stUtc.wMonth;
-	st_tm.tm_year = stUtc.wYear;
+	st_tm.tm_mon = stUtc.wMonth - 1;
+	st_tm.tm_year = stUtc.wYear - 1900;
 	st_tm.tm_wday = stUtc.wDayOfWeek;
 	st_tm.tm_yday = dayOfYear(stUtc.wYear, stUtc.wMonth-1, stUtc.wDay);
 	st_tm.tm_isdst = 0;

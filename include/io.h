@@ -39,6 +39,7 @@ int _wceclose (int fd);
 FILE* _wcefdopen( int handle, const char *mode );
 
 #define access _wceaccess
+#define _access _wceaccess
 #define open _wceopen
 #define _open _wceopen
 #define close _wceclose
