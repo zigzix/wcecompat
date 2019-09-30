@@ -1,0 +1,9 @@
+set OSVERSION=WCE500
+set PLATFORM=VC-CE
+set TARGETCPU=ARMV4I
+@set LIB=C:\Program Files (x86)\Windows CE Tools\SDKs\YOURSDKNAME\Lib\ARMv4I;C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\ce\lib\armv4i;C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\lib
+@set INCLUDE=C:\Program Files (x86)\Windows CE Tools\SDKs\YOURSDKNAME\Include\Armv4i
+@set Path=C:\WINCE700\sdk\bin\i386\arm;C:\WINCE700\sdk\bin\i386;%Path%
+set LIB=C:\Program Files (x86)\Windows CE Tools\wce500\STANDARDSDK_500\Lib\ARMv4I;C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\ce\lib\armv4i;C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\lib
+set INCLUDE=C:\Program Files (x86)\Windows CE Tools\wce500\STANDARDSDK_500\Include\Armv4i
+set Path=C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\ce\bin\x86_arm;%Path%
